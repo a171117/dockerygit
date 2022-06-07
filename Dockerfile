@@ -5,8 +5,8 @@
 FROM amazoncorretto:11 as intermediate
 
 # instalamos git
-RUN apt-get update
-RUN apt-get install -y git
+RUN apk update
+RUN apk install -y git
 
 # agregamos las credenciales en la construcción
 ARG SSH_PRIVATE_KEY
